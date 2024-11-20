@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* 增加背景色，讓介面更柔和 */
+}
+
+.menu, .quiz-container, .question-container {
+    max-width: 600px;
+    margin: 20px auto; /* 增加上下間距 */
+    text-align: center;
+    padding: 20px;
+    background-color: #fff; /* 背景設置為白色 */
+    border-radius: 10px; /* 增加圓角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 增加陰影 */
+}
+
+h1, h2 {
+    font-size: 2em; /* 增加標題大小 */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em; /* 增加文字大小 */
+    margin: 10px 0;
+}
+
+.answers button, .menu button {
+    display: block;
+    margin: 10px auto;
+    padding: 15px; /* 增加按鈕內邊距 */
+    width: 100%; /* 按鈕寬度占滿容器 */
+    font-size: 1.5em; /* 增大按鈕文字大小 */
+    cursor: pointer;
+    border: none;
+    border-radius: 8px; /* 增加圓角 */
+    background-color: #007bff; /* 增加背景色 */
+    color: white;
+    transition: background-color 0.3s ease; /* 增加點擊效果 */
+}
+
+.answers button:hover, .menu button:hover {
+    background-color: #0056b3; /* 滑鼠移上時的背景色 */
+}
+
+input[type="number"] {
+    font-size: 1.5em; /* 增大輸入框文字 */
+    padding: 10px; /* 增加內邊距 */
+    width: 80%; /* 增加寬度 */
+    margin: 10px auto; /* 讓輸入框居中 */
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.result {
+    font-size: 1.5em; /* 增加結果文字大小 */
+    color: green;
+    margin-top: 20px;
+}
+
+button#next-btn, button#return-btn {
+    margin-top: 20px;
+}
