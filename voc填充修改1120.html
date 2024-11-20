@@ -156,6 +156,7 @@
                 });
             } else if (quizType === 'fill-in-the-blank') {
                 // 顯示填空題
+                questionElement.style.fontSize = '2em'; // 設定文字大小
                 questionElement.textContent = `請輸入單字: ${currentWord.meaning}`;
                 const input = document.createElement('input');
                 input.type = 'text';
