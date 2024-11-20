@@ -161,6 +161,11 @@
                 const input = document.createElement('input');
                 input.type = 'text';
                 input.style.width = '100%';
+                input.style.padding = '15px';   // 增加內邊距，讓框框更大
+                input.style.fontSize = '1.5em'; // 增加文字大小，便於閱讀
+                input.style.borderRadius = '10px'; // 圓角設計，讓框框更美觀
+                input.style.border = '1px solid #ccc'; // 邊框設置，柔和的顏色
+                input.style.boxSizing = 'border-box'; // 確保內外邊距不影響總寬度
                 input.id = 'fill-answer';
                 answersElement.appendChild(input);
 
