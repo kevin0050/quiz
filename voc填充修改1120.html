@@ -101,7 +101,7 @@
 
     // 初始化程序
     async function init() {
-        await loadCSVFromFile('words.csv'); // 假設 CSV 檔案名稱為 words.csv
+        await loadCSVFromFile('senior_7000.csv'); // 假設 CSV 檔案名稱為 
         if (words.length === 0) {
             alert("無法載入單字資料，請檢查 CSV 檔案！");
         }
@@ -130,7 +130,8 @@
                 alert('請輸入有效的題數！');
                 return;
             }
-
+	    // 隨機打亂 words 陣列
+    	words = words.sort(() => Math.random() - 0.5);
             currentQuestionIndex = 0;
             document.getElementById('question-container').style.display = 'none';
             document.getElementById('quiz').style.display = 'block';
