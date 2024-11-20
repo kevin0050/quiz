@@ -136,6 +136,7 @@
 
             if (quizType === 'multiple-choice') {
                 // 顯示選擇題
+                questionElement.style.fontSize = '2em'; // 設定文字大小
                 questionElement.textContent = `單字: ${currentWord.word} 的意思是什麼？`;
 
                 const options = [
